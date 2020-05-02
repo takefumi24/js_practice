@@ -1,24 +1,17 @@
-function sayHello() {
-  console.log('hello');
+const unfollow = function () {
+  console.log("フォローを外しました");
 }
 
-function sayName(name) {
-  console.log(name)
+const cancelTweet = function () {
+  console.log("ツイートをキャンセルしました");
 }
 
-let myName = 'yamada';
-sayHello();
-sayName(myName);
-
-function calc(num1, num2) {
-  return num1 * num2;
+function confirmed(fn) {
+  if (window.confirm("実行しますか？")) {
+    fn();
+  }
 }
 
-let num1 = 3;
-let num2 = 4;
-console.log(calc(num1, num2));
-
-let hello = function () {
-  console.log('hello');
-}
-hello();
+confirmed(function () {
+  console.log("フォローを外しました");
+});
