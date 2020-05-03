@@ -7,13 +7,12 @@ window.addEventListener("load", function () {
   // クラスの切り替えをtabSwitch関数で定義
   function tabSwitch() {
     // 全てのactiveクラスのうち、最初の要素を削除（"[0]は、最初の要素の意味"）
-    $(".active")[0].classList.remove("active");
+    $(".active").removeClass("active");
 
     // クリックしたタブにactiveクラスを追加
-    this.classList.add("active");
-
+    $(this).addClass("active");
     // コンテンツの全てのshowクラスのうち、最初の要素を削除
-    $(".show")[0].classList.remove("show");
+    $(".show").removeClass("show");
 
     // 何番目の要素がクリックされたかを、配列tabsから要素番号を取得
     const index = tabsAry.indexOf(this);
