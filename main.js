@@ -17,5 +17,11 @@ window.addEventListener("load", function () {
   btn3.addEventListener("click", function () {
     changeText.classList.add("red");
     console.log(changeText.classList);
-  })
+  });
+
+  let btn4 = document.querySelector("#Button4");
+  let obj = document.querySelector("div");
+  btn4.addEventListener("click", function () {
+    obj.classList.remove("blue");
+  });
 });
