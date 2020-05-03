@@ -12,4 +12,10 @@ window.addEventListener("load", function () {
   btn2.addEventListener("click", function () {
     changeText.innerHTML = "変更されました"
   });
+
+  let btn3 = document.querySelector("#Button3");
+  btn3.addEventListener("click", function () {
+    changeText.classList.add("red");
+    console.log(changeText.classList);
+  })
 });
