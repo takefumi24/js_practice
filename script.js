@@ -1,10 +1,10 @@
-function confirmed(fn) {
-  const input = window.prompt("実行しますか？")
-  fn(input);
-}
+// const btn = document.getElementById("button");
 
-confirmed(function (input) {
-  if (input === "実行") {
-    console.log("リポジトリを削除");
-  }
-});
+// btn.addEventListener("click", function() {
+//   console.log("フォロー解除");
+// });
+
+const foods = ["にんじん", "じゃがいも", "玉ねぎ"];
+foods.forEach(function (food) {
+  console.log(food);
+})
